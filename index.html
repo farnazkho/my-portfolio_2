@@ -19,8 +19,8 @@
 
     /* ── Header ── */
     header {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
       padding: 1.2rem 4rem;
       background-color: #1a1a2e;
@@ -31,22 +31,10 @@
     }
 
     header h1 {
-      grid-column: 2;
-      text-align: center;
-    }
-
-    header nav {
-      grid-column: 3;
-      text-align: right;
-    }
-
-    header h1 {
       font-size: 1.4rem;
       font-weight: 600;
       letter-spacing: 1px;
     }
-
-    /* (grid placement overrides are set on the header rule above) */
 
     nav a {
       color: #ccc;
@@ -76,6 +64,8 @@
     #hero h2 {
       font-size: 3rem;
       margin-bottom: 0.75rem;
+      text-align: center;
+      width: 100%;
     }
 
     #hero h2 span {
